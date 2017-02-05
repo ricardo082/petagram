@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    android:elevation="@dimen/elevacion_action_bar"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:contentInsetStart="@dimen/right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/manoMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <TextView
+            android:id="@+id/tituloToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="@dimen/nombre_titulo"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:id="@+id/btnDarLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cinco_estrellas"
+
+            />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
